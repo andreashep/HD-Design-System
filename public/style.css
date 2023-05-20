@@ -1304,7 +1304,65 @@ header .header-accent {
     font-size: 1.5rem;
   }
 }
-/*header 2*/
+/* ---------------------------Hamburger Menu-----[ON BIG SCREENS]--------------------------------------- */
+/* (A) WRAPPER */
+#hamnav {
+  width: 100%;
+  background: #000;
+  /* Optional */
+  position: sticky;
+  top: 0;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems {
+  display: flex;
+}
+
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+#hamitems a:hover {
+  background: #af0d0d;
+}
+
+/* (C) HIDE HAMBURGER */
+#hamnav label, #hamburger {
+  display: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
 .container-main {
   width: 90vw;
   height: 100vh;
@@ -1823,5 +1881,11 @@ header .header-accent {
   font-family: 16px;
   font-size: 1.5rem;
 }
+
+/*mobiles in portrait mode*/
+/*mobiles in landscape mode*/
+/*tablets in portrait mode*/
+/*tablets in landscape mode*/
+/*desktops and laptops*/
 
 /*# sourceMappingURL=style.css.map */
