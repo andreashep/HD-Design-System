@@ -1,7 +1,9 @@
 // color
-$blue-main: rgb(40, 99, 143);
-$blue-dark: rgb(11, 38, 58);
+$blue-main: rgb(41, 99, 143);
 $blue-light: rgb(214, 224, 242);
+$blue-mid: rgb(170, 193, 221);
+$blue-mid-dark: rgb(94, 145, 204);
+$blue-dark: rgb(11, 38, 58);
 $cream: rgb(252, 245, 235);
 $cream-dark: rgb(242, 235, 225);
 $brown-accent: rgb(124, 77, 58);
@@ -75,6 +77,8 @@ a {
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
+    color: $blue-dark;
+    text-decoration: none;
 }
 
 blockquote {

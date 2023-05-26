@@ -1,9 +1,20 @@
 /*On hover the button colors go into their respective negatives.  Active is a darker color than hover.  These colors can be changes to customize the buttons uses */
 .btn_sizes {
 	display: inline-flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	align-items: center;
 	border: 1px solid black;
+	margin: 8px;
+	padding: 16px;
+	
+}
+
+h1 {
+	display: flex;
+	color: $blue-dark;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
 }
 
 ul {
@@ -13,45 +24,38 @@ ul {
 	align-items: center;
 	margin: 0;
 	padding: 0;
+	width: 100vw;
 }
 
 /*default btn*/
 .btn {
 	display: flex;
-	background-color: $white;
-	color: $yellow-dark;
-	margin: 25px;
-	min-width: 150px;
-	min-height: 35px;
-	
-	border-radius: 5px;
+	background-color: $cream;
+	color: $blue-dark;
+	margin: 50px;
+	width: 150px;
+	height: 35px;
+	border: .5px solid $brown-text;
+	border-radius: 25px;
 	justify-content: center;
 	align-content: center;
 	padding: 5px;
 
 	a {
-		display: flex;
 		text-decoration: none;
 		align-self: center;
-		color: $yellow-dark;
-		&:hover {
-			width: 175px;
-			border-radius: 5px;
-			justify-content: center;
-			align-content: center;
-			color: $white;
-		}
+		color: $blue-dark;
 	}
 
 	&:hover {
-		color: $white;
-		background-color: $yellow;
+		color: $cream;
+		background-color: $blue-main;
 		filter: drop-shadow(3px 3px 3px black);
 	}
 
 	&:active {
-		color: $white;
-		background-color: $yellow-dark;
+		color: $cream;
+		background-color: $blue-dark;
 		filter: drop-shadow(3px 3px 3px black);
 	}
 }
@@ -60,41 +64,40 @@ ul {
 /*btn-small*/
 .btn-small {
 	display: flex;
-	background-color: none;
-	color: $white;
+	background-color: $cream;
+	color: $blue-dark;
 	margin: 25px;
-	min-width: 120px;
-	min-height: 50px;
-	border-radius: 5px;
+	width: 100px;
+	height: 35px;
+	border: .5px solid $brown-text;
+	border-radius: 25px;
 	font-size: 16px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 7px;
 
 	a {
 		display: flex;
 		text-decoration: none;
-		align-self: center;
-		color: $white;
+		align-content: center;
+		color: $blue-dark;
 
 		&:hover {
-			
-			border-radius: 5px;
-			justify-content: center;
+			display: flex;
+			color: $cream;
+			border-radius: 25px;
 			align-content: center;
-			color: $white;
 		}
 	}
 
 	&:hover {
-		color: $white;
-		background-color: $yellow;
+		color: $cream;
+		background-color: $blue-main;
 		filter: drop-shadow(3px 3px 3px black);
 	}
 
 	&:active {
-		background-color: $yellow-dark;
+		background-color: $blue-dark;
 		color: $cream;
 		filter: drop-shadow(3px 3px 3px black);
 	}
@@ -106,6 +109,7 @@ ul {
 	background-color: $cream;
 	color: $blue-dark;
 	margin: 50px;
+	padding: 8px;
 	width: 200px;
 	height: 50px;
 	border: .5px solid $brown-text;
@@ -115,8 +119,18 @@ ul {
 	align-content: center;
 
 	a {
+		display: flex;
 		text-decoration: none;
-		align-self: center;
+		align-content: center;
+		justify-content: center;
+		color: $blue-dark;
+
+		&:hover {
+			display: flex;
+			color: $cream;
+			border-radius: 25px;
+			align-content: center;
+		}
 	}
 
 	&:hover {
@@ -149,6 +163,7 @@ ul {
 	a {
 		text-decoration: none;
 		align-self: center;
+		color: $cream;
 	}
 
 	&:hover {
@@ -181,6 +196,7 @@ ul {
 	a {
 		text-decoration: none;
 		align-self: center;
+		color: $blue-dark;
 	}
 
 	&:hover {
@@ -208,6 +224,7 @@ ul {
 	a {
 		text-decoration: none;
 		align-self: center;
+		color: $blue-dark;
 	}
 
 	&:hover {
@@ -241,6 +258,7 @@ ul {
 	a {
 		text-decoration: none;
 		align-self: center;
+		color: $cream;
 	}
 
 	&:hover {
@@ -275,6 +293,7 @@ ul {
 		text-decoration: none;
 		align-self: center;
 		list-style: none;
+		color: $blue-dark;
 	}
 
 	&:hover {
